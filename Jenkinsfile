@@ -75,7 +75,7 @@ pipeline {
                         def params = [
                             string(name: 'version', value: "$packageVersion")
                         ]
-                        build job: "catalogue-deploy", wait= true, parameters: params
+                        build job: "catalogue-deploy", wait: true, parameters: params
                     }
                 
                 }
