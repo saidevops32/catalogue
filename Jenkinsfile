@@ -66,14 +66,13 @@ pipeline {
                             file: 'catalogue.zip',
                             type: 'zip']
                         ]
-              )
+                )
             }
         }
         stage('Deploy') {
             steps {
                 sh """
                     echo  "Here I wrote shell script"
-                    #sleep 10
                 """
             }
         }
