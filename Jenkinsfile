@@ -40,9 +40,11 @@ pipeline {
                 """
             }
         }    
-        stage('Test') {
+        stage('build') {
             steps {
-                echo 'Testing..'
+                sh """
+                     ls -la
+                """
             }
         }
         stage('Deploy') {
