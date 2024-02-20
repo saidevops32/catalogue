@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment { 
-        packageVersion = ' '
+        packageVersion = ''
     }
     options {
         timeout(time: 1, unit: 'HOURS')
@@ -31,16 +31,18 @@ pipeline {
                     packageVersion = packageJson.version
                     echo "appication version: $packageVersion"
                 }
+            }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                
             }
         }
         stage('Deploy') {
             steps {
                 sh """
                     echo  "Here I wrote shell script"
+                    echo "$GREETING"
                     #sleep 10
                 """
             }
