@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment { 
-        packageVersion = ''
+        packageVersion = ' '
     }
     options {
         timeout(time: 1, unit: 'HOURS')
@@ -49,7 +49,7 @@ pipeline {
             steps {
                 sh """
                     echo  "Here I wrote shell script"
-                    echo "$GREETING"
+                    #echo "$GREETING"
                     #sleep 10
                 """
             }
