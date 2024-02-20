@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment { 
-        packageVersion = ' '
+        packageVersion = ''
     }
     options {
         timeout(time: 1, unit: 'HOURS')
@@ -33,7 +33,7 @@ pipeline {
                 }
             }
         }
-        stage('get the version') {
+        stage('installing dependencies') {
             steps {
                 sh """
                      npm install
