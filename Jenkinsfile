@@ -49,28 +49,11 @@ pipeline {
             steps {
                 sh """
                     echo  "Here I wrote shell script"
-                    #echo "$GREETING"
                     #sleep 10
                 """
             }
         }
-        stage('check params'){
-            steps{
-                sh """
-                    // echo "Hello ${params.PERSON}"
-
-                    // echo "Biography: ${params.BIOGRAPHY}"
-
-                    // echo "Toggle: ${params.TOGGLE}"
-
-                    // echo "Choice: ${params.CHOICE}"
-
-                    // echo "Password: ${params.PASSWORD}"
-
-                    echo " hai "
-                """
-            }
-        }
+        
     }
     // post build
     post { 
