@@ -13,7 +13,7 @@ const logger = pino({
 const expLogger = expPino({
     logger: logger
 });
-// imagine this as developer changing the code
+// imagine this as developer changing the cod
 // MongoDB
 var db;
 var collection;
